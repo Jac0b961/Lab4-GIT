@@ -10,7 +10,13 @@ case "$1" in
             echo "log$i.txt created by skrypt.sh on $(date)" > log$i.txt
         done
         ;;
+    --help)
+        echo "Dostepne opcje:"
+        echo "--date          Wyswietla dzisiejsza date"
+        echo "--logs [NUM]    Tworzy NUM plikow logx.txt (domyslnie 100)"
+        ;;
     *)
-        echo "Opcja nieznana. Uzyj --date lub --logs"
+        echo "Opcja nieznana. Usyj --help, aby zobaczys dostspne opcje"
         ;;
 esac
+
