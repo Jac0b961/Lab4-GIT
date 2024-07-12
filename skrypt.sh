@@ -14,9 +14,12 @@ case "$1" in
         echo "Dostepne opcje:"
         echo "--date          Wyswietla dzisiejsza date"
         echo "--logs [NUM]    Tworzy NUM plikow logx.txt (domyslnie 100)"
+        echo "--init          Klonuje repozytorium"
+        ;;
+    --init)
+        git clone https://github.com/Jac0b961/Lab4-GIT.git
         ;;
     *)
-        echo "Opcja nieznana. Usyj --help, aby zobaczys dostspne opcje"
+        echo "Opcja nieznana. Uzyj --help, aby zobaczyc dostepne opcje"
         ;;
 esac
-
